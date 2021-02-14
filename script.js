@@ -3,10 +3,11 @@ let audio = new Audio("sound.wav");
 
 let startButton = document.getElementById("startButton")
 let interval
+
 startButton.addEventListener('click', function() {
     clearInterval(interval)
     audio.play();
-    interval = setInterval(function(){ audio.play(); }, 3000);
+    interval = setInterval(function(){ audio.play(); }, 24000);
     stopButton.style.backgroundColor = "lightgrey"
     startButton.style.backgroundColor = "lightgreen"
 });
