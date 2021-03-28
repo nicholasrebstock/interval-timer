@@ -1,6 +1,6 @@
 
 let audio = new Audio("sound.wav");
-
+audio.volume = 0.15
 let startButton = document.getElementById("startButton")
 let interval
 
